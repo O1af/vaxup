@@ -5,6 +5,7 @@ import About from "./components/About";
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import Covid from "./components/Covid";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Route path="checklist" element={<Checklist />} />
 				<Route path="/checklist" element={<Checklist />} />
 				<Route path="form" element={<VaxForm />} />
+				<Route path="covid" element={<Covid />} />
 			</Routes>
 		</div>
 	);
@@ -47,8 +49,9 @@ function Home() {
 								/>
 								<ul className="uk-navbar-nav">
 									<li className="uk-active">
-										<a className="uk-navbar-item">
-											VaxUp.<strong>tech</strong>
+										<a className="uk-navbar-item" href>
+											<p>VaxUp</p>
+											<p className="uk-text-bold">.Tech</p>
 										</a>
 									</li>
 								</ul>
@@ -56,23 +59,28 @@ function Home() {
 							<div className="uk-navbar-right">
 								<ul className="uk-navbar-nav uk-visible@s">
 									<li className="uk-active">
-										<a className="uk-text-large" href="/">
+										<a className="uk-text-large" href="vaxup#">
 											Register/Login
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="/checklist">
+										<a className="uk-text-large" href="vaxup#/checklist">
 											Checklist
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="/form">
+										<a className="uk-text-large" href="vaxup#/form">
 											Profile
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="/about">
+										<a className="uk-text-large" href="vaxup#/about">
 											About
+										</a>
+									</li>
+									<li>
+										<a className="uk-text-large" href="vaxup#/covid">
+											Covid
 										</a>
 									</li>
 								</ul>
@@ -117,7 +125,7 @@ function Home() {
 							<li>
 								<a
 									className="uk-text-meta uk-text-default uk-text-success"
-									href="#"
+									href="/"
 								>
 									Login/Register
 								</a>
@@ -125,7 +133,7 @@ function Home() {
 							<li>
 								<a
 									className="uk-text-meta uk-text-default uk-text-success"
-									href="#"
+									href="/about"
 								>
 									About
 								</a>

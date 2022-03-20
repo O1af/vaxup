@@ -10,12 +10,20 @@ const VaccineInfo = (props) => {
 							</a>
 							<div class="uk-accordion-content uk-card-body uk-card-default">
 								<p>
-									What is {props.name}: {props.infod}{" "}
+									<b>What is {props.name}:</b> {props.infod}{" "}
 								</p>
 								<p>
-									Info about {props.name}: {props.infov}{" "}
+									<b>Info about {props.name} Vaccine:</b> {props.infov}{" "}
 								</p>
-								<p>When to get Vaccine: {props.date}</p>
+								<p>
+									<b>When to get Vaccine:</b> {props.date}
+								</p>
+								<p>
+									<b>Citation(s):</b>
+								</p>
+								{props.cite.map((c) => (
+									<p>{c}</p>
+								))}
 							</div>
 						</li>
 					</ul>

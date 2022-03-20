@@ -61,7 +61,8 @@ const VaxForm = (props) => {
 							<ul className="uk-navbar-nav">
 								<li className="uk-active">
 									<a className="uk-navbar-item" href>
-										VaxUp.<strong>tech</strong>
+										<p>VaxUp</p>
+										<p className="uk-text-bold">.Tech</p>
 									</a>
 								</li>
 							</ul>
@@ -69,23 +70,28 @@ const VaxForm = (props) => {
 						<div className="uk-navbar-right">
 							<ul className="uk-navbar-nav uk-visible@s">
 								<li>
-									<a className="uk-text-large" href="/">
+									<a className="uk-text-large" href="vaxup#">
 										Register/Login
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="/checklist">
+									<a className="uk-text-large" href="vaxup#/checklist">
 										Checklist
 									</a>
 								</li>
 								<li className="uk-active">
-									<a className="uk-text-large" href="/form">
+									<a className="uk-text-large" href="vaxup#/form">
 										Profile
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="/about">
+									<a className="uk-text-large" href="vaxup#/about">
 										About
+									</a>
+								</li>
+								<li>
+									<a className="uk-text-large" href="vaxup#/covid">
+										Covid
 									</a>
 								</li>
 							</ul>

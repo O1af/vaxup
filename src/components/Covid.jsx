@@ -1,52 +1,4 @@
-import axios from "axios";
-import VaccineInfo from "./VaccineInfo";
-import { useState, useEffect } from "react";
-const Checklist = () => {
-	const [isLoading, setIsLoading] = useState(true);
-	const [vaccines, setVaccines] = useState();
-	const body = {
-		id: localStorage.getItem("user"),
-		firstName: localStorage.getItem("first"),
-		middleName: localStorage.getItem("middle"),
-		lastName: localStorage.getItem("last"),
-		allergies: localStorage.getItem("allergies"),
-		birthDate: localStorage.getItem("birthDate"),
-		sex: localStorage.getItem("sex"),
-	};
-	const options = {
-		method: "POST",
-		url: "https://flask-api-fapey5evqq-uc.a.run.app/SetUserData",
-		headers: { "Content-Type": "application/json" },
-		data: {
-			ID: localStorage.getItem("user"),
-			first_name: localStorage.getItem("first"),
-			middle_name: localStorage.getItem("middle"),
-			last_name: localStorage.getItem("last"),
-			bday: localStorage.getItem("birthDate"),
-			allergies: localStorage.getItem("vax"),
-			sex: localStorage.getItem("sex"),
-			history_anaphylaxis: false,
-			history_vasovagal_syncope: false,
-			immunocompromised: localStorage.getItem("ic"),
-		},
-	};
-	useEffect(() => {
-		axios
-			.request(options)
-			.then(function (response) {
-				console.log(response.data);
-				setVaccines(response.data);
-				setIsLoading(false);
-			})
-			.catch(function (error) {
-				console.error(error);
-			});
-	}, []);
-
-	if (isLoading) {
-		return <div>Loading...</div>;
-	}
-
+const Covid = () => {
 	return (
 		<div>
 			<title>Vaccines Checklist</title>
@@ -85,7 +37,7 @@ const Checklist = () => {
 										Register/Login
 									</a>
 								</li>
-								<li className="uk-active">
+								<li>
 									<a className="uk-text-large" href="vaxup#/checklist">
 										Checklist
 									</a>
@@ -100,7 +52,7 @@ const Checklist = () => {
 										About
 									</a>
 								</li>
-								<li>
+								<li className="uk-active">
 									<a className="uk-text-large" href="vaxup#/covid">
 										Covid
 									</a>
@@ -116,36 +68,57 @@ const Checklist = () => {
 					</nav>
 				</div>
 			</header>
-			<div
-				className="uk-background-default uk-background-cover uk-vertical-align uk-text-center uk-height-large"
-				style={{ backgroundImage: "url()" }}
-			>
-				<br />
-				<div className="uk-card uk-card-small uk-card-default uk-align-center uk-width-1-4@m ">
+			<div>
+				<div className="uk-card uk-card-default uk-width-1-2@m uk-align-center">
 					<div className="uk-card-header">
 						<div className="uk-grid-small uk-flex-middle" uk-grid>
 							<div className="uk-width-expand">
-								<h4 className="uk-card-title uk-margin-remove-bottom">
-									{body.firstName} {body.lastName}
-								</h4>
-								<p>Date of Birth: {body.birthDate}</p>
-								<p>Sex: {body.sex}</p>
-								<p>Allergies:{body.allergies}</p>
+								<h3 className="uk-card-title uk-margin-remove-bottom uk-text-danger uk-text-bold">
+									COVID-19
+								</h3>
 							</div>
 						</div>
 					</div>
+					<div className="uk-card-body">
+						<p>
+							COVID-19 Vaccines are the best way to prevent the coronavirus.{" "}
+							<br />
+							According to the CDC, "A growing body of evidence shows that the
+							benefits of COVID-19 vaccination outweigh the known and potential
+							risks. CDC recommends an mRNA COVID-19 vaccine (Pfizer-BioNTech or
+							Moderna) in most circumstances based on an updated risk-benefit
+							analysis."
+						</p>
+					</div>
 				</div>
-			</div>
-			<div className="uk-background-default uk-background-container uk-vertical-align uk-text-center uk-height-large">
-				{vaccines.Vaccines.map((vax) => (
-					<VaccineInfo
-						name={vax.Name}
-						infod={vax.dInfo}
-						infov={vax.vInfo}
-						date={vax.Dates}
-						cite={vax.Cite}
-					/>
-				))}
+				<div className="uk-card uk-card-default uk-width-1-2@m uk-align-center">
+					<div className="uk-card-body">
+						<h3 className="uk-card-title uk-margin-remove-bottom uk-text-success">
+							Find COVID-19 Vaccine Appointments at your local pharmacy
+						</h3>
+						<br />
+						<a href="https://www.walgreens.com/topic/promotion/covid-vaccine.jsp">
+							Walgreens
+						</a>
+						<br />
+						<a href="https://www.cvs.com/immunizations/covid-19-vaccine">CVS</a>
+						<br />
+						<a href="https://www.vaccines.gov/">Vaccines.gov</a>
+						<br />
+						<a href="https://www.riteaid.com/pharmacy/scheduler">Rite Aid</a>
+						<br />
+						<a href="https://www.kroger.com/rx/covid-vaccine">Kroger</a>
+						<br />
+					</div>
+					<div className="uk-card-footer">
+						<p className="uk-margin-remove-bottom">
+							For more info, visit{" "}
+							<a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html">
+								Benefits of Getting a COVID-19 Vaccine
+							</a>
+						</p>
+					</div>
+				</div>
 			</div>
 			<div
 				id="offcanvas-flip"
@@ -158,17 +131,17 @@ const Checklist = () => {
 						<li>
 							<a
 								className="uk-text-meta uk-text-default uk-text-success"
-								href="#"
+								href="/login"
 							>
-								Checklist
+								Login/Register
 							</a>
 						</li>
 						<li>
 							<a
 								className="uk-text-meta uk-text-default uk-text-success"
-								href="#"
+								href="/about"
 							>
-								Profile
+								About
 							</a>
 						</li>
 					</ul>
@@ -177,5 +150,4 @@ const Checklist = () => {
 		</div>
 	);
 };
-
-export default Checklist;
+export default Covid;
