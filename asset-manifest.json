@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vaxup/static/css/main.073c9b0a.css",
-    "main.js": "/vaxup/static/js/main.b9695bb7.js",
-    "static/js/787.4c4050f5.chunk.js": "/vaxup/static/js/787.4c4050f5.chunk.js",
-    "index.html": "/vaxup/index.html",
-    "main.073c9b0a.css.map": "/vaxup/static/css/main.073c9b0a.css.map",
-    "main.b9695bb7.js.map": "/vaxup/static/js/main.b9695bb7.js.map",
-    "787.4c4050f5.chunk.js.map": "/vaxup/static/js/787.4c4050f5.chunk.js.map"
+    "main.css": "./static/css/main.073c9b0a.css",
+    "main.js": "./static/js/main.a6788b0b.js",
+    "static/js/787.4c4050f5.chunk.js": "./static/js/787.4c4050f5.chunk.js",
+    "index.html": "./index.html",
+    "main.073c9b0a.css.map": "./static/css/main.073c9b0a.css.map",
+    "main.a6788b0b.js.map": "./static/js/main.a6788b0b.js.map",
+    "787.4c4050f5.chunk.js.map": "./static/js/787.4c4050f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b9695bb7.js"
+    "static/js/main.a6788b0b.js"
   ]
 }
