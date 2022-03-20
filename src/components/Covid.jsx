@@ -24,7 +24,7 @@ const Covid = () => {
 							<ul className="uk-navbar-nav">
 								<li className="uk-active">
 									<a className="uk-navbar-item" href>
-										<p>VaxUp</p>
+										<p>VaxxUp</p>
 										<p className="uk-text-bold">.Tech</p>
 									</a>
 								</li>
@@ -33,27 +33,27 @@ const Covid = () => {
 						<div className="uk-navbar-right">
 							<ul className="uk-navbar-nav uk-visible@s">
 								<li>
-									<a className="uk-text-large" href="vaxup#">
+									<a className="uk-text-large" href="#">
 										Register/Login
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/checklist">
-										Checklist
+									<a className="uk-text-large" href="#/checklist">
+										VaxxReport
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/form">
+									<a className="uk-text-large" href="#/form">
 										Profile
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/about">
+									<a className="uk-text-large" href="#/about">
 										About
 									</a>
 								</li>
 								<li className="uk-active">
-									<a className="uk-text-large" href="vaxup#/covid">
+									<a className="uk-text-large" href="#/covid">
 										Covid
 									</a>
 								</li>

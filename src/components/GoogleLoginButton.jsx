@@ -28,7 +28,6 @@ const GoogleLoginButton = () => {
 			clientId="304194997486-8r1pva8e4eoggqq53eah6hr5c1si7125.apps.googleusercontent.com"
 			buttonText="Login"
 			onSuccess={responseGoogle}
-			onFailure={responseGoogle}
 			cookiePolicy={"single_host_origin"}
 		/>
 	);

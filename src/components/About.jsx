@@ -24,7 +24,7 @@ const About = () => {
 							<ul className="uk-navbar-nav">
 								<li className="uk-active">
 									<a className="uk-navbar-item" href>
-										<p>VaxUp</p>
+										<p>VaxxUp</p>
 										<p className="uk-text-bold">.Tech</p>
 									</a>
 								</li>
@@ -33,27 +33,27 @@ const About = () => {
 						<div className="uk-navbar-right">
 							<ul className="uk-navbar-nav uk-visible@s">
 								<li>
-									<a className="uk-text-large" href="vaxup#">
+									<a className="uk-text-large" href="#">
 										Register/Login
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/checklist">
-										Checklist
+									<a className="uk-text-large" href="#/checklist">
+										VaxxReport
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/form">
+									<a className="uk-text-large" href="#/form">
 										Profile
 									</a>
 								</li>
 								<li className="uk-active">
-									<a className="uk-text-large" href="vaxup#/about">
+									<a className="uk-text-large" href="#/about">
 										About
 									</a>
 								</li>
 								<li>
-									<a className="uk-text-large" href="vaxup#/covid">
+									<a className="uk-text-large" href="#/covid">
 										Covid
 									</a>
 								</li>
@@ -81,9 +81,9 @@ const About = () => {
 					</div>
 					<div className="uk-card-body">
 						<h4 className="uk-text-default uk-text-strong">
-							Vaccine Checklist aims to increase vaccination rates, increase
-							medical equity, improve trust in our healthcare system, and
-							ultimately reduce the occurrence of preventable illness.
+							VaxxUP aims to increase vaccination rates, increase medical
+							equity, improve trust in our healthcare system, and ultimately
+							reduce the occurrence of preventable illness.
 						</h4>
 					</div>
 				</div>
@@ -99,10 +99,10 @@ const About = () => {
 					</div>
 					<div className="uk-card-body">
 						<p>
-							To achieve our mission, Vaccines Checklist provides a concise
-							explanation and timeline of the vaccines a child needs to receive.
-							In doing so, we take a two-pronged approach to tackling this
-							public health challenge.
+							To achieve our mission, VaxxUP provides a concise explanation and
+							timeline of the vaccines a child needs to receive. In doing so, we
+							take a two-pronged approach to tackling this public health
+							challenge.
 							<br /> <br /> First, we address growing vaccine hesitancy due to
 							widespread misinformation. It isn’t always easy nor practical to
 							read through dense charts and guidelines to understand the

@@ -50,7 +50,7 @@ function Home() {
 								<ul className="uk-navbar-nav">
 									<li className="uk-active">
 										<a className="uk-navbar-item" href>
-											<p>VaxUp</p>
+											<p>VaxxUp</p>
 											<p className="uk-text-bold">.Tech</p>
 										</a>
 									</li>
@@ -59,27 +59,27 @@ function Home() {
 							<div className="uk-navbar-right">
 								<ul className="uk-navbar-nav uk-visible@s">
 									<li className="uk-active">
-										<a className="uk-text-large" href="vaxup#">
+										<a className="uk-text-large" href="#">
 											Register/Login
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="vaxup#/checklist">
-											Checklist
+										<a className="uk-text-large" href="#/checklist">
+											VaxxReport
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="vaxup#/form">
+										<a className="uk-text-large" href="#/form">
 											Profile
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="vaxup#/about">
+										<a className="uk-text-large" href="#/about">
 											About
 										</a>
 									</li>
 									<li>
-										<a className="uk-text-large" href="vaxup#/covid">
+										<a className="uk-text-large" href="#/covid">
 											Covid
 										</a>
 									</li>
@@ -114,6 +114,53 @@ function Home() {
 						</p>
 					</div>
 				</div>
+				<div className="uk-align-center">
+					<div className="uk-card uk-card-default uk-width-1-2@m uk-align-center">
+						<div className="uk-card-header">
+							<div className="uk-grid-small uk-flex-middle" uk-grid>
+								<div className="uk-width-expand">
+									<h3 className="uk-card-title uk-margin-remove-bottom uk-text-primary uk-text-bold">
+										Additional Info
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div className="uk-card-body uk-margin-remove-bottom">
+							<p>
+								We at VaxUp understand that it is challenging to navigate the
+								complex medical information regarding vaccination. This is even
+								more difficult given the misinformation regarding vaccines in
+								circulation. Thus, we included some additional credible sources
+								that provide a greater understanding of vaccinations.
+							</p>
+						</div>
+						<div className="uk-card-footer uk-margin-remove-top uk-text-bold">
+							<a href="https://www.cdc.gov/vaccines/schedules/hcp/imz/child-adolescent.html">
+								CDC Vaccine Schedule
+							</a>
+							<br />
+							<a href="https://www.mayoclinic.org/">
+								Descriptions of Vaccine-Preventable Diseases
+							</a>
+							<br />
+							<a href="https://www.historyofvaccines.org/timeline/all">
+								Vaccine History
+							</a>
+							<br />
+							<a href="https://coronavirus.jhu.edu/vaccines/vaccines-faq">
+								How Vaccines Work
+							</a>
+							<br />
+							General Resources:{" "}
+							<a href="https://www.who.int/health-topics/vaccines-and-immunization">
+								World Health Organization,
+							</a>
+							<a href="https://www.vaccines.gov/">vaccines.gov</a>
+							<p />
+						</div>
+					</div>
+				</div>
+
 				<div
 					id="offcanvas-flip"
 					uk-offcanvas="flip: true; mode: reveal; overlay: true"
