@@ -72,7 +72,7 @@ const Checklist = () => {
 							<ul className="uk-navbar-nav">
 								<li className="uk-active">
 									<a className="uk-navbar-item">
-										Vaccines<strong>Checklist</strong>
+										VaxUp.<strong>tech</strong>
 									</a>
 								</li>
 							</ul>
