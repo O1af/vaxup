@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vaxup/static/css/main.073c9b0a.css",
-    "main.js": "/vaxup/static/js/main.32cfe065.js",
+    "main.js": "/vaxup/static/js/main.6bb16b5c.js",
     "static/js/787.4c4050f5.chunk.js": "/vaxup/static/js/787.4c4050f5.chunk.js",
     "index.html": "/vaxup/index.html",
     "main.073c9b0a.css.map": "/vaxup/static/css/main.073c9b0a.css.map",
-    "main.32cfe065.js.map": "/vaxup/static/js/main.32cfe065.js.map",
+    "main.6bb16b5c.js.map": "/vaxup/static/js/main.6bb16b5c.js.map",
     "787.4c4050f5.chunk.js.map": "/vaxup/static/js/787.4c4050f5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.32cfe065.js"
+    "static/js/main.6bb16b5c.js"
   ]
 }
